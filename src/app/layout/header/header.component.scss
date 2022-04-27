@@ -1,0 +1,45 @@
+.navbar{
+  .navbar-brand {
+    color: white;
+  }
+  .navbar-brand fa-icon.logo{
+    font-size: 40px;
+  }
+  h6{
+    font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  }
+  .form-control{
+    border-radius: 3px;
+    width: 600px;
+    margin-left: 20px;
+  }
+  position: relative;
+  .search{
+    position: absolute;
+    z-index: 10;
+    top: 15px;
+    right: 43%;
+    color: blue;
+  }
+  .btn{
+    .cart{
+      font-size: 30px;
+    }
+    .badge{
+      font-size: 10px;
+    }
+  }
+  
+}
+@media (max-width:	992px) {
+  .form-control{
+    display: none;
+  }
+  .search{
+    color: white !important;
+  }
+}

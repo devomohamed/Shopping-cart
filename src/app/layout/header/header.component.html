@@ -1,0 +1,15 @@
+<header>
+  <div class="navbar bg-primary shadow-sm">
+    <div class="navbar-brand align-center d-flex">
+      <fa-icon style="cursor: pointer;" class="logo" [icon]="faShippingFast" routerLink="/products" ></fa-icon>&nbsp; <h6 style="cursor: pointer;" routerLink="/products">Mooody</h6>
+      <div class="form-group">
+        <input class="form-control" type="text" placeholder="Search Products">
+      </div>
+      <fa-icon class="search" [icon]="faSearch" ></fa-icon>
+    </div>
+    <button class="btn btn-primary" routerLink="/cart">
+      <fa-icon class="cart" [icon]="faCartPlus" ></fa-icon>
+      <div class="badge bg-danger">{{totalItem}}</div>
+    </button>
+  </div>
+</header>

@@ -1,0 +1,34 @@
+<div class="card-top container-fluid mt-2">
+  <div class="container d-flex">
+    <div class="item" (click)="filterCategories('all')">
+      <a><img src="../../../assets/PngItem_4653544.png" alt=""></a>
+      <h6>All Products</h6>
+    </div>
+    <div class="item" (click)="filterCategories('electronics')">
+      <a><img src="../../../assets/download.webp" alt=""></a>
+      <h6>Electronics</h6>
+    </div>
+    <div class="item" (click)="filterCategories('fashion')">
+      <a><img src="../../../assets/download (1).jfif" alt=""></a>
+      <h6>Fashion</h6>
+    </div>
+    <div class="item" (click)="filterCategories('jewelery')">
+      <a><img src="../../../assets/download2.png" alt=""></a>
+      <h6>Jewllery</h6>
+    </div>
+  </div>
+</div>
+
+<div class="products container">
+  <div class="row">
+    <ng-container *ngFor="let product of productsView">
+      <div  data-aos="fade-up" class="card col-md-3">
+        <img [src]="product.image" alt="">
+        <h5>{{product.title}}</h5>
+        <p>{{product.description}}</p>
+        <p><strong>Price</strong>{{product.price}}$</p>
+        <button class="btn btn-primary" (click)="addToCart(product)">Add To Cart</button>
+      </div>
+    </ng-container>
+  </div>
+</div>

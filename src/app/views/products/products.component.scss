@@ -1,0 +1,60 @@
+.card-top {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: .25rem;
+  .container{
+    flex-wrap: wrap;
+    .item{
+      cursor: pointer;
+      margin: 0 15px;
+      text-align: center;
+      &:hover{
+        color: blue
+      }
+      a{
+        img{
+          width: 64px;
+          height: 64px;
+        }
+      }
+    }
+  }
+}
+
+.products{
+  padding-top: 50px;
+  .card{
+    padding: 20px;
+    // margin: 50px;
+    img{
+      width: 150px;
+      height: 150px;
+      margin-bottom: 15px;
+      transition: 0.3s ease-in-out;
+      &:hover{
+        transition: 0.3s ease-in-out;
+        transform: scale(1.1);
+      }
+    }
+    h5,p{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100ch;
+    }
+  }
+}
+
+@media (min-width:	992px) {
+  .card{
+    img{
+      text-align: center;
+    }
+}
+}

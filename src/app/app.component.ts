@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { faFilm,faAdjust,faAlignRight } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'add-to-cart';
+  faFilm=faFilm
+  faAdjust =faAdjust
+  faAlignRight = faAlignRight
+
+  
 }
